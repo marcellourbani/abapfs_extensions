@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>persist sessions/locks for abap filesystem extension</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_REST_HTTP_HANDLER</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_REST_HTTP_HANDLER</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_REST_HTTP_HANDLER==========CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_REST_HTTP_HANDLER==========CP</PROGRAMNAME>
+     <EXTID>1</EXTID>
+     <ID>1</ID>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_REST_HTTP_HANDLER\IN:IF_HTTP_EXTENSION\ME:HANDLE_REQUEST\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>&quot;Stateful mode support (compatible with implementation in 7.51)</item>
+      <item>&quot;required for write support in visual studio code extension</item>
+      <item/>
+      <item>data:__abapfs_stateful type string.</item>
+      <item>__abapfs_stateful = server-&gt;request-&gt;get_header_field( &apos;X-sap-adt-sessiontype&apos; ).</item>
+      <item>if __abapfs_stateful = &apos;stateful&apos;.</item>
+      <item>gv_stateful = abap_true.</item>
+      <item>else.</item>
+      <item>gv_stateful = abap_false.</item>
+      <item>endif.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_REST_HTTP_HANDLER\IN:IF_HTTP_EXTENSION\ME:HANDLE_REQUEST\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>
