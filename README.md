@@ -13,3 +13,5 @@ Visual studio code works over HTTP, and needs to manage the stateful session fla
 This is handled fine in my 7.51 developer edition, but not in older systems. This enhancement implements the same mechanism in older systems
 
 There is no need to install this in systems which handle the sessions already, but it won't cause issue if imported. It will simply (re)set the flag twice
+
+In my 7.51 system this is done by SAP in method CONFIGURE_SESSION_STATE of class CL_ADT_WB_RES_APP, in my other systems (including a 7.50 PL5 one) it doesn't exist.
