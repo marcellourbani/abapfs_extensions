@@ -1,6 +1,6 @@
 # ABAPFS extensions
-Allow updates on systems older than 7.51 with [visual studio code ABAP remote filesystem extension](https://github.com/marcellourbani/vscode_abap_remote_fs)
-
+Allow updates on systems older than 7.51 with [visual studio code ABAP remote filesystem extension](https://github.com/marcellourbani/vscode_abap_remote_fs) and 
+[NPM ADT API](https://github.com/marcellourbani/abap-adt-api)
 ## Installation
 
 Import in your dev system with [ABAPGIT](https://github.com/larshp/abapGit)
