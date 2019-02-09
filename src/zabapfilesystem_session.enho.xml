@@ -27,7 +27,7 @@
       <item>__abapfs_stateful = server-&gt;request-&gt;get_header_field( &apos;X-sap-adt-sessiontype&apos; ).</item>
       <item>if __abapfs_stateful = &apos;stateful&apos;.</item>
       <item>gv_stateful = abap_true.</item>
-      <item>else.</item>
+      <item>elseif __abapfs_stateful = &apos;stateless&apos;.</item>
       <item>gv_stateful = abap_false.</item>
       <item>endif.</item>
      </SOURCE>
